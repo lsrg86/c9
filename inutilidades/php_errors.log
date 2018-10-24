@@ -1,0 +1,6 @@
+[24-Oct-2018 17:55:14 UTC] PHP Warning:  readfile(../trayecto/archivo.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/inutilidades/ArvhivosExternos/read.php on line 9
+[24-Oct-2018 17:55:40 UTC] PHP Notice:  Undefined index: archivo in /home/ubuntu/workspace/inutilidades/classes/Upload.php on line 13
+[24-Oct-2018 17:55:40 UTC] PHP Fatal error:  Uncaught Error: Undefined class constant 'POLICY_KEEP' in /home/ubuntu/workspace/inutilidades/ArvhivosExternos/pagina1.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/ArvhivosExternos/pagina1.php on line 5

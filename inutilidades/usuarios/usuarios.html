@@ -8,11 +8,14 @@
 	<title>Formulario</title>
 </head>
 <body>
-
-	<form method="post" enctype="application/x-www-form-urlencoded" action="usuario.php">
+		<form action="usuariosLista.php">
+            <input type="submit" value="Lista de usuarios"/>
+        </form>
+        
+        <form method="post" enctype= multipart/form-data action="usuarios.php">
 		Nombre<br>
 		<input type="text" name="nombre"/><br>
-		
+		<input type="file" name="archivo"/>
 		
 	    <input type="submit" value="Enviar"/>
 		
