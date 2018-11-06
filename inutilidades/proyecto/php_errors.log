@@ -1,0 +1,8 @@
+[26-Oct-2018 09:03:54 UTC] PHP Warning:  require(../classes/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/inutilidades/Proyecto/producto/index.php on line 3
+[26-Oct-2018 09:03:54 UTC] PHP Fatal error:  require(): Failed opening required '../classes/autoload.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/inutilidades/Proyecto/producto/index.php on line 3
+[26-Oct-2018 09:04:05 UTC] PHP Warning:  require(../classes/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/inutilidades/Proyecto/producto/index.php on line 3
+[26-Oct-2018 09:04:05 UTC] PHP Fatal error:  require(): Failed opening required '../classes/autoload.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/inutilidades/Proyecto/producto/index.php on line 3
+[26-Oct-2018 09:05:38 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\Database' not found in /home/ubuntu/workspace/inutilidades/Proyecto/producto/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/Proyecto/producto/index.php on line 11

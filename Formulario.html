@@ -1,0 +1,47 @@
+</!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+	<title>Formulario</title>
+</head>
+<body>
+
+	<form method="post" enctype="application/x-www-form-urlencoded" action="pagina3.php">
+		Nombre<br>
+		<input type="text" name="nombre"/><br>
+		Sexo<br>
+		<input type="radio" name="sexo" value="hombre"/>Hombre<br>
+		<input type="radio" name="sexo" value="mujer"/>Mujer<br>
+		Contrase&ntildea<br>
+		<input type="password" name="contrasen"/><br>
+		Aficiones<br>
+		<input type="checkbox" name="aficiones" value="deporte"/>Deporte<br>
+		<input type="checkbox" name="aficiones" value="cine"/>Cine<br>
+		<input type="checkbox" name="aficiones" value="leer"/>Leer<br>
+		Fecha de nacimiento<br>
+		<input type="date" name="fecha"/><br>
+		Correo<br>
+		<input type="email" name="correo"/><br>
+		Curr&iacuteculum<br>
+		<input type="file" name="archivo"/><br>
+		N&uacutemero de hermanos<br>
+		<input type="number" name="hermanos" min="0" max="30"/><br>
+		Transporte<br>
+			<select name="transporte">
+				<option value="coche">Coche</option>
+  				<option value="bici">Bicicleta</option>
+  				<option value="moto">Moto</option>
+  				<option value="otro">Otro</option>
+			</select><br><br>
+
+		<input type="submit" value="Enviar"/>
+		<input type="reset" value="Restablecer"/>
+
+
+	</form>
+
+</body>
+</html>
