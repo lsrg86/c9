@@ -6,7 +6,7 @@ use izv\app\App;
 
 class Database {
     
-   
+    //Atributos
     private $host,
             $user,
             $password,
@@ -14,7 +14,7 @@ class Database {
             $connection,
             $sentence;
     
-    
+    // Constructor
     function __construct($user = null, $password = null, $database = null, $host='localhost') {
         $this->user = $user;
         $this->password = $password;
@@ -44,7 +44,8 @@ class Database {
             
             $result = true;
         } catch(\PDOException $e) {
-            
+            //echo $e->getMessage();
+            //echo '<pre>' . var_export($this->connection->errorInfo(), true) . '</pre>';
         }
         return $result;
     }
@@ -54,7 +55,7 @@ class Database {
         $this->connection = null;
     }
     
-   
+    // Get y Set
     
     function getConnection() {
         return $this->connection;

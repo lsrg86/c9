@@ -21,13 +21,13 @@ create table producto (
   collate utf8_general_ci;
   
 create table usuario (
-    id
-    correo
-    alias
-    nombre
-    clave
-    activo
-    fechaalta
+    id bigint not null auto_increment primary key,
+    correo varchar(60) not null unique,
+    alias varchar(30) null
+    nombre 
+    clave 
+    activo 
+    fechaalta 
 ) engine = innodb
   character set utf8
   collate utf8_general_ci;
