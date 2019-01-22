@@ -1,0 +1,54 @@
+{% extends '_base.html' %}
+{% block subtitle %}
+<div class="col-lg-12">
+    <table class="table">
+        <tr>
+            <th scope="col">
+                <a href="index/ciudades?orden=id">id</a>
+            </th>
+            <th scope="col">
+                <a href="index/ciudades?orden=name">nombre</a>
+            </th>
+            <th scope="col">
+                <a href="index/ciudades?orden=countrycode">código país</a>
+            </th>
+            <th scope="col">
+                <a href="index/ciudades?orden=district">distrito</a>
+            </th>
+            <th scope="col">
+                <a href="index/ciudades?orden=population">población</a>
+            </th>
+        </tr>
+        {% for city in ciudades %}
+        <tr>
+            <td scope="col">{{city.id}}</td>
+            <td scope="col">{{city.name}}</td>
+            <td scope="col">{{city.countrycode}}</td>
+            <td scope="col">{{city.district}}</td>
+            <td scope="col">{{city.population}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <div class='row'>
+        <div class='col-md-3'>
+            <a href="index/ciudades?pagina={{paginas.primero}}" class="btn contact-submit" role="button">Primero</a>
+        </div>
+        <div class='col-md-3'>
+            <a href="index/ciudades?pagina={{paginas.anterior}}" class="btn contact-submit" role="button">Anterior</a>
+        </div>
+        <div class='col-md-3'>
+            <a href="index/ciudades?pagina={{paginas.siguiente}}" class="btn contact-submit" role="button">Siguiente</a>
+        </div>
+        <div class='col-md-3'>
+            <a href="index/ciudades?pagina={{paginas.ultimo}}" class="btn contact-submit" role="button">Último</a>
+        </div>
+    </div>
+    <div class='row'>
+        {% for pagina in rango %}
+            <div class='col-md-1'>
+                <a href="index/ciudades?pagina={{pagina}}" class="btn contact-submit" role="button">{{pagina}}</a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{%endblock%}

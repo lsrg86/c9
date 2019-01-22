@@ -4,3 +4,181 @@
 Stack trace:
 #0 {main}
   thrown in /home/ubuntu/workspace/inutilidades/ArvhivosExternos/pagina1.php on line 5
+[16-Nov-2018 11:17:22 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "_bootstrap.html" (looked into: /home/ubuntu/workspace/inutilidades/Plantillas/twig). in /home/ubuntu/workspace/inutilidades/Plantillas/classes/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:226
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/Plantillas/classes/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('_bootstrap.html')
+#1 /home/ubuntu/workspace/inutilidades/Plantillas/classes/vendor/twig/twig/lib/Twig/Environment.php(270): Twig_Loader_Filesystem->getCacheKey('_bootstrap.html')
+#2 /home/ubuntu/workspace/inutilidades/Plantillas/classes/vendor/twig/twig/lib/Twig/Environment.php(350): Twig_Environment->getTemplateClass('_bootstrap.html')
+#3 /home/ubuntu/workspace/inutilidades/Plantillas/classes/vendor/twig/twig/lib/Twig/Environment.php(289): Twig_Environment->loadTemplate('_bootstrap.html')
+#4 /home/ubuntu/workspace/inutilidades/Plantillas/plantilla3.php(8): Twig_Environment->render('_bootstrap.html')
+#5 {m in /home/ubuntu/workspace/inutilidades/Plantillas/classes/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 226
+[16-Nov-2018 11:17:47 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "_bootstrap.html" (looked into: /home/ubuntu/workspace/inutilidades/Plantillas/twig). in /home/ubuntu/workspace/inutilidades/Plantillas/classes/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:226
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/Plantillas/classes/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('_bootstrap.html')
+#1 /home/ubuntu/workspace/inutilidades/Plantillas/classes/vendor/twig/twig/lib/Twig/Environment.php(270): Twig_Loader_Filesystem->getCacheKey('_bootstrap.html')
+#2 /home/ubuntu/workspace/inutilidades/Plantillas/classes/vendor/twig/twig/lib/Twig/Environment.php(350): Twig_Environment->getTemplateClass('_bootstrap.html')
+#3 /home/ubuntu/workspace/inutilidades/Plantillas/classes/vendor/twig/twig/lib/Twig/Environment.php(289): Twig_Environment->loadTemplate('_bootstrap.html')
+#4 /home/ubuntu/workspace/inutilidades/Plantillas/plantilla3.php(8): Twig_Environment->render('_bootstrap.html')
+#5 {m in /home/ubuntu/workspace/inutilidades/Plantillas/classes/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 226
+[16-Nov-2018 11:17:53 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "_bootstrap.html" (looked into: /home/ubuntu/workspace/inutilidades/Plantillas/twig). in /home/ubuntu/workspace/inutilidades/Plantillas/classes/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:226
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/Plantillas/classes/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('_bootstrap.html')
+#1 /home/ubuntu/workspace/inutilidades/Plantillas/classes/vendor/twig/twig/lib/Twig/Environment.php(270): Twig_Loader_Filesystem->getCacheKey('_bootstrap.html')
+#2 /home/ubuntu/workspace/inutilidades/Plantillas/classes/vendor/twig/twig/lib/Twig/Environment.php(350): Twig_Environment->getTemplateClass('_bootstrap.html')
+#3 /home/ubuntu/workspace/inutilidades/Plantillas/classes/vendor/twig/twig/lib/Twig/Environment.php(289): Twig_Environment->loadTemplate('_bootstrap.html')
+#4 /home/ubuntu/workspace/inutilidades/Plantillas/plantilla3.php(8): Twig_Environment->render('_bootstrap.html')
+#5 {m in /home/ubuntu/workspace/inutilidades/Plantillas/classes/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 226
+[11-Dec-2018 11:17:58 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\model\Model' not found in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/tercerosejemplos/c9.php(22): izv\mvc\FrontController->__construct('index.php[QSA]', '')
+#1 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php on line 16
+[11-Dec-2018 11:19:26 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\Database' not found in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/model/Model.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php(16): izv\model\Model->__construct()
+#1 /home/ubuntu/workspace/inutilidades/tercerosejemplos/c9.php(22): izv\mvc\FrontController->__construct('index.php[QSA]', '')
+#2 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/model/Model.php on line 13
+[11-Dec-2018 11:20:38 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\tools\Session' not found in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/controller/Controller.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php(18): izv\controller\Controller->__construct(Object(izv\model\Model))
+#1 /home/ubuntu/workspace/inutilidades/tercerosejemplos/c9.php(22): izv\mvc\FrontController->__construct('index.php[QSA]', '')
+#2 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/controller/Controller.php on line 16
+[11-Dec-2018 11:23:58 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\tools\Session' not found in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/controller/Controller.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php(18): izv\controller\Controller->__construct(Object(izv\model\Model))
+#1 /home/ubuntu/workspace/inutilidades/tercerosejemplos/c9.php(22): izv\mvc\FrontController->__construct('index.php[QSA]', '')
+#2 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/controller/Controller.php on line 16
+[12-Dec-2018 13:44:37 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "_bootstrap.html" (looked into: twigtemplates/bootstrap) in "_second.html" at line 1. in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:226
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('_bootstrap.html')
+#1 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Environment.php(270): Twig_Loader_Filesystem->getCacheKey('_bootstrap.html')
+#2 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Environment.php(350): Twig_Environment->getTemplateClass('_bootstrap.html')
+#3 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Template.php(330): Twig_Environment->loadTemplate('_bootstrap.html', NULL)
+#4 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/ in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 226
+[13-Dec-2018 07:49:38 UTC] PHP Parse error:  syntax error, unexpected 'BASE' (T_STRING), expecting function (T_FUNCTION) in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/app/App.php on line 12
+[13-Dec-2018 07:51:18 UTC] PHP Parse error:  syntax error, unexpected 'BASE' (T_STRING), expecting function (T_FUNCTION) in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/app/App.php on line 12
+[13-Dec-2018 07:51:59 UTC] PHP Parse error:  syntax error, unexpected 'BASE' (T_STRING), expecting function (T_FUNCTION) in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/app/App.php on line 12
+[13-Dec-2018 08:28:22 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: The "twigtemplates/zeta/" directory does not exist ("/home/ubuntu/workspace/inutilidades/tercerosejemplos/twigtemplates/zeta/"). in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:101
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(82): Twig_Loader_Filesystem->addPath('twigtemplates/z...', '__main__')
+#1 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(40): Twig_Loader_Filesystem->setPaths(Array)
+#2 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/view/ThirdView.php(14): Twig_Loader_Filesystem->__construct('twigtemplates/z...')
+#3 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php(32): izv\view\ThirdView->render('')
+#4 /home/ubuntu/workspace/inutilidades/tercerosejemplos/c9.php(25): izv\mvc\FrontController->render()
+#5 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 101
+[14-Dec-2018 09:49:24 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\controller\UserController' not found in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/tercerosejemplos/c9.php(22): izv\mvc\FrontController->__construct('index.php', '')
+#1 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php on line 18
+[14-Dec-2018 09:51:43 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\controller\UserController' not found in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/tercerosejemplos/c9.php(22): izv\mvc\FrontController->__construct('index.php', '')
+#1 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php on line 18
+[14-Dec-2018 09:58:36 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\controller\UserController' not found in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/tercerosejemplos/c9.php(22): izv\mvc\FrontController->__construct('index.php', '')
+#1 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php on line 18
+[14-Dec-2018 09:59:35 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\controller\UserController' not found in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/tercerosejemplos/c9.php(22): izv\mvc\FrontController->__construct('index.php', '')
+#1 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php on line 18
+[14-Dec-2018 10:01:26 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\controller\UserController' not found in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/tercerosejemplos/c9.php(22): izv\mvc\FrontController->__construct('index.php', '')
+#1 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php on line 18
+[14-Dec-2018 10:11:37 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\controller\UserController' not found in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/tercerosejemplos/c9.php(22): izv\mvc\FrontController->__construct('index.php', '')
+#1 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php on line 18
+[14-Dec-2018 10:13:41 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\controller\UserController' not found in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/tercerosejemplos/c9.php(22): izv\mvc\FrontController->__construct('new', '')
+#1 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php on line 18
+[14-Dec-2018 10:57:55 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\controller\UserController' not found in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/tercerosejemplos/c9.php(22): izv\mvc\FrontController->__construct('mate', '')
+#1 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php on line 18
+[14-Dec-2018 11:02:28 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\controller\UserController' not found in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/tercerosejemplos/c9.php(22): izv\mvc\FrontController->__construct('mate', '')
+#1 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php on line 18
+[14-Dec-2018 11:02:42 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\controller\UserController' not found in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/tercerosejemplos/c9.php(22): izv\mvc\FrontController->__construct('mate', '')
+#1 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php on line 18
+[14-Dec-2018 11:32:53 UTC] PHP Fatal error:  Uncaught Twig_Error_Syntax: Unexpected token "end of template" of value "" ("end of statement block" expected). in /home/ubuntu/workspace/inutilidades/tercerosejemplos/twigtemplates/mate/_base.html:718
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/TokenParser/Block.php(51): Twig_TokenStream->expect(3)
+#1 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Parser.php(168): Twig_TokenParser_Block->parse(NULL)
+#2 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Parser.php(81): Twig_Parser->subparse(NULL, false)
+#3 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Environment.php(533): Twig_Parser->parse(Object(Twig_TokenStream))
+#4 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Environment.php(565): Twig_Environment->parse(Object(Twig_TokenStream))
+#5 /home/ubuntu/workspace/inutilidades/tercerosejemplos/class in /home/ubuntu/workspace/inutilidades/tercerosejemplos/twigtemplates/mate/_base.html on line 718
+[24-Dec-2018 13:34:02 UTC] PHP Notice:  session_start(): ps_files_cleanup_dir: opendir(/var/lib/php/sessions) failed: Permission denied (13) in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/tools/Session.php on line 15
+[11-Jan-2019 10:05:58 UTC] PHP Fatal error:  Uncaught Twig_Error_Syntax: Unexpected "subtitle" tag (expecting closing tag for the "block" tag defined near line 117). in /home/ubuntu/workspace/inutilidades/tercerosejemplos/twigtemplates/mate/_base.html:117
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/TokenParser/Block.php(38): Twig_Parser->subparse(Array, true)
+#1 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Parser.php(168): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#2 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Parser.php(81): Twig_Parser->subparse(NULL, false)
+#3 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Environment.php(533): Twig_Parser->parse(Object(Twig_TokenStream))
+#4 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Environment.php(565): Twig_Environment->parse(Object(Twig_TokenStream))
+#5 /home/ubuntu/workspace/inuti in /home/ubuntu/workspace/inutilidades/tercerosejemplos/twigtemplates/mate/_base.html on line 117
+[20-Jan-2019 10:58:49 UTC] PHP Fatal error:  Uncaught Twig_Error_Syntax: Multiple extends tags are forbidden. in /home/ubuntu/workspace/inutilidades/tercerosejemplos/twigtemplates/mate/_login.html:24
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Parser.php(168): Twig_TokenParser_Extends->parse(Object(Twig_Token))
+#1 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Parser.php(81): Twig_Parser->subparse(NULL, false)
+#2 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Environment.php(533): Twig_Parser->parse(Object(Twig_TokenStream))
+#3 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Environment.php(565): Twig_Environment->parse(Object(Twig_TokenStream))
+#4 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#5 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/t in /home/ubuntu/workspace/inutilidades/tercerosejemplos/twigtemplates/mate/_login.html on line 24
+[21-Jan-2019 16:21:32 UTC] PHP Fatal error:  Uncaught Twig_Error_Syntax: Multiple extends tags are forbidden. in /home/ubuntu/workspace/inutilidades/tercerosejemplos/twigtemplates/mate/_login.html:24
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Parser.php(168): Twig_TokenParser_Extends->parse(Object(Twig_Token))
+#1 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Parser.php(81): Twig_Parser->subparse(NULL, false)
+#2 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Environment.php(533): Twig_Parser->parse(Object(Twig_TokenStream))
+#3 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Environment.php(565): Twig_Environment->parse(Object(Twig_TokenStream))
+#4 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#5 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/t in /home/ubuntu/workspace/inutilidades/tercerosejemplos/twigtemplates/mate/_login.html on line 24
+[21-Jan-2019 18:57:09 UTC] PHP Notice:  Undefined property: izv\model\UserModel::$db in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/model/UserModel.php on line 29
+[21-Jan-2019 18:57:09 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to izv\managedata\ManageUsuario::__construct() must be an instance of izv\database\Database, null given, called in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/model/UserModel.php on line 29 and defined in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/managedata/ManageUsuario.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/model/UserModel.php(29): izv\managedata\ManageUsuario->__construct(NULL)
+#1 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/controller/UserController.php(26): izv\model\UserModel->getAll()
+#2 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php(28): izv\controller\UserController->register()
+#3 /home/ubuntu/workspace/inutilidades/tercerosejemplos/c9.php(24): izv\mvc\FrontController->doAction()
+#4 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/managedata/ManageUsuario.php on line 12
+[21-Jan-2019 18:58:28 UTC] PHP Fatal error:  Uncaught Twig_Error_Syntax: Unexpected character "&". in /home/ubuntu/workspace/inutilidades/tercerosejemplos/twigtemplates/mate/_mainlogged.html:71
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Lexer.php(202): Twig_Lexer->lexExpression()
+#1 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Lexer.php(105): Twig_Lexer->lexVar()
+#2 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Environment.php(512): Twig_Lexer->tokenize(Object(Twig_Source))
+#3 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Environment.php(565): Twig_Environment->tokenize(Object(Twig_Source))
+#4 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#5 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/vendor/twig/twig/lib/Twig/Environment.php(289): Twig_Envir in /home/ubuntu/workspace/inutilidades/tercerosejemplos/twigtemplates/mate/_mainlogged.html on line 71
+[21-Jan-2019 20:12:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method izv\controller\UserController::getSession() in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/controller/UserController.php:28
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php(28): izv\controller\UserController->register()
+#1 /home/ubuntu/workspace/inutilidades/tercerosejemplos/c9.php(24): izv\mvc\FrontController->doAction()
+#2 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/controller/UserController.php on line 28
+[21-Jan-2019 20:18:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method izv\controller\UserController::getSession() in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/controller/UserController.php:28
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/mvc/FrontController.php(28): izv\controller\UserController->register()
+#1 /home/ubuntu/workspace/inutilidades/tercerosejemplos/c9.php(24): izv\mvc\FrontController->doAction()
+#2 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/controller/UserController.php on line 28

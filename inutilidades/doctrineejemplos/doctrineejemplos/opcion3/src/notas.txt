@@ -1,0 +1,166 @@
+../doctrine/vendor/bin/doctrine orm:generate:entities ./src
+
+../doctrine/vendor/bin/doctrine orm:schema-tool:create
+
+../doctrine/vendor/bin/doctrine orm:generate-proxies
+
+(https://stackoverflow.com/questions/19066140/doctrine-error-failed-opening-required-tmp-cg-source-php)
+
+Instalar PhpMyAdmin
+   [mysql-ctl instal]
+   phpmyadmin-ctl install
+   [mysql-ctl start]
+
+Crear base de datos MySQL
+    create database NOMBREBD default character set utf8 collate utf8_unicode_ci;
+    create user USUARIOBD@localhost identified by 'CLAVEBD';
+    grant all on NOMBREBD.* to USUARIOBD@localhost;
+    flush privileges;
+
+    create database basedatos default character set utf8 collate utf8_unicode_ci;
+    create user usuario@localhost identified by 'clave';
+    grant all on basedatos.* to usuario@localhost;
+    flush privileges;
+
+Doctrine 2
+    http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/tutorials/getting-started.html
+    http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/dql-doctrine-query-language.html
+    http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/query-builder.html
+    https://github.com/doctrine/doctrine2-orm-tutorial
+
+    Doctrine 2 is an object-relational mapper (ORM) for PHP 5.4+ that provides transparent
+    persistence for PHP objects.
+
+    Entities are PHP Objects that can be identified over many requests by a unique identifier
+    or primary key. An entity contains persistable properties. A persistable property is an
+    instance variable of the entity that is saved into and retrieved from the database by
+    Doctrine’s data mapping capabilities.
+
+    1 Instalacion:
+    Crear: composer.json.
+    Ejecutar: composer install
+
+    2 Crear los objetos que van a ser mapeados en la base de datos.
+
+    /* 1 bootstrap.php */
+    /*************************************************************************/
+    <?php
+    use Doctrine\ORM\Tools\Setup;
+    use Doctrine\ORM\EntityManager;
+    require_once 'vendor/autoload.php';
+    $isDevMode = true;
+    $config = Setup::createAnnotationMetadataConfiguration(array(__DIR__ . '/src'), $isDevMode);
+    $conn = array(
+        'driver'   => 'pdo_mysql',
+        'host'     => '127.0.0.1',
+        'dbname'   => 'basedatos',
+        'user'     => 'usuario',
+        'password' => 'clave'
+    );
+    $entityManager = EntityManager::create($conn, $config);
+    /*************************************************************************/
+
+    /* 2 cli-config.php */
+    /*************************************************************************/
+    <?php
+    require_once 'bootstrap.php';
+    return \Doctrine\ORM\Tools\Console\ConsoleRunner::createHelperSet($entityManager);
+    /*************************************************************************/
+
+    /* 3 src/Registro.php */
+    /*************************************************************************/
+    <?php
+    /**
+     * @Entity @Table(name="registro")
+     **/
+    class Registro {
+        /**
+         * @Id
+         * @Column(type="integer") @GeneratedValue
+         */
+        protected $id;
+        /**
+         * @Column(type="string", length=200, unique=true, nullable=false)
+         */
+        protected $token;
+        /**
+         * @Column(type="string", length=100, unique=false, nullable=true)
+         */
+        protected $email;
+        /**
+         * @Column(type="string", length=20, unique=false, nullable=true)
+         */
+        protected $phone;
+
+        //métodos getter y setter
+        public function getId() {
+            return $this->id;
+        }
+        public function setId($id) {
+            $this->id = $id;
+            return $this;
+        }
+        ...
+    }
+    /*************************************************************************/
+
+    Crear las tablas:
+    shell> .../vendor/bin/doctrine orm:schema-tool:create
+
+    Borrar las tablas:
+    shell> .../vendor/bin/doctrine orm:schema-tool:drop --force
+
+    Modificar las tablas:
+    shell> .../vendor/bin/doctrine orm:schema-tool:update --force
+
+    3 Trabajar con los objetos
+
+        a Persistir los objetos
+        $registro = new Registro();
+        $registro->setToken('token');
+        $registro->setEmail('email');
+        $registro->setPhone('phone');
+        $entityManager->persist($registro);
+        $entityManager->flush();
+
+        b Listar
+        $repositorioRegistros = $entityManager->getRepository('Registro');
+        $registros = $repositorioRegistros->findAll();
+        foreach ($registros as $registro) {
+            echo $registro->getToken() . '<br>';
+        }
+
+        c Get por id
+        $id = 1;
+        $registro = $entityManager->find('Registro', $id);
+
+        d Get por condicion (uno, varios)
+        $registro = $entityManager->getRepository('Registro')
+                                  ->findOneBy(array('token' => 'valor'));
+        $registros = $entityManager->getRepository('Registro')
+                                   ->findBy(array('email' => 'email@email.es', 'phone' => '958123456'));
+
+        e Edit or update
+        $id = 1;
+        $registro = $entityManager->find('Registro', $id);//$registro(1,'token','mail','phone');
+        $registro->setToken('new token');
+        $registro->setEmail('new email');
+        $registro->setToken('new token')->setEmail('asasasa');
+        $entityManager->flush();//commit
+
+        f Delete or remove
+        $id = 1;
+        $registro = $entityManager->find('Registro', $id);
+        $entityManager->remove($registro);//borro provisional
+        $entityManager->flush();//definitivo
+
+        g Select or query (sql, dql)
+        $dql = 'select r FROM Registro r where r.email = :email or r.phone = :phone order by r.id desc';
+        $query = $entityManager->createQuery($dql)
+                                ->setParameter('email', trim($_GET['email']))
+                                ->setParameter('phone', 'new phone');
+        $registros = $query->getResult();
+        foreach ($registros as $registro) {
+            echo $registro->getToken() . '<br>';
+        }
+

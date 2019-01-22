@@ -1,0 +1,14 @@
+{% extends 'base.twig' %}
+{% block title %}Demo{% endblock %}
+{% block body %}
+    <h1>{{ more }}</h1>
+    Hello, {{ name }}!
+    <ul id="navigation">
+        {% for item in navigation %}
+            <li>
+                <a href="{{ item.href }}">{{ item.caption }}</a>
+                {{ attribute(item, 'get', ['one']) }}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

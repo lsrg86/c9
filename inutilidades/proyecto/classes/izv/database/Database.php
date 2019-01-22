@@ -44,7 +44,7 @@ class Database {
             
             $result = true;
         } catch(\PDOException $e) {
-            
+            echo "error de conexión";
         }
         return $result;
     }

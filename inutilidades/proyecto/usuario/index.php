@@ -26,6 +26,7 @@ $alert = Alert::getMessage(Reader::get('op'), Reader::get('resultado'));
         <link rel="stylesheet" href="../css/style.css" >
     </head>
     <body>
+        
         <!-- modal -->
         <div class="modal fade" id="confirm" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog" role="document">

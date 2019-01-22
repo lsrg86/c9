@@ -1,0 +1,363 @@
+[13-Oct-2018 16:07:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Materia::setNombre() in /home/ubuntu/workspace/tercerosejemplos/opcion1/prueba.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/tercerosejemplos/opcion1/prueba.php on line 37
+[13-Oct-2018 16:08:41 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Pepe' for key 'nombre' in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php:105
+Stack trace:
+#0 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php(105): PDOStatement->execute(NULL)
+#1 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/dbal/lib/Doctrine/DBAL/Statement.php(168): Doctrine\DBAL\Driver\PDOStatement->execute(NULL)
+#2 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(281): Doctrine\DBAL\Statement->execute()
+#3 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(1014): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->executeInserts()
+#4 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(378): Do in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 66
+[13-Oct-2018 16:56:32 UTC] PHP Warning:  require_once(doctrine/vendor/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/tercerosejemplos/opcion2/bootstrap.php on line 2
+[13-Oct-2018 16:56:32 UTC] PHP Fatal error:  require_once(): Failed opening required 'doctrine/vendor/autoload.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/tercerosejemplos/opcion2/bootstrap.php on line 2
+[14-Oct-2018 09:01:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method AlumnoMateria::setIdalumno() in /home/ubuntu/workspace/tercerosejemplos/opcion2/prueba.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/tercerosejemplos/opcion2/prueba.php on line 27
+[14-Oct-2018 09:02:15 UTC] PHP Fatal error:  Uncaught Doctrine\ORM\ORMInvalidArgumentException: Expected value of type "Alumno" for association field "AlumnoMateria#$alumno", got "integer" instead. in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/ORMInvalidArgumentException.php:206
+Stack trace:
+#0 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(840): Doctrine\ORM\ORMInvalidArgumentException::invalidAssociation(Object(Doctrine\ORM\Mapping\ClassMetadata), Array, 2)
+#1 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(740): Doctrine\ORM\UnitOfWork->computeAssociationChanges(Array, 2)
+#2 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(452): Doctrine\ORM\UnitOfWork->computeChangeSet(Object(Doctrine\ORM\Mapping\ClassMetadata), Object(AlumnoMateria))
+#3 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(765): Doctrine in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/ORMInvalidArgumentException.php on line 206
+[14-Oct-2018 09:04:45 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'paco' for key 'UNIQ_1435D52D3A909126' in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php:105
+Stack trace:
+#0 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php(105): PDOStatement->execute(NULL)
+#1 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/dbal/lib/Doctrine/DBAL/Statement.php(168): Doctrine\DBAL\Driver\PDOStatement->execute(NULL)
+#2 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(281): Doctrine\DBAL\Statement->execute()
+#3 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(1014): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->executeInserts()
+#4 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWo in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 66
+[14-Oct-2018 11:10:39 UTC] PHP Fatal error:  Uncaught Doctrine\ORM\ORMInvalidArgumentException: Expected value of type "Doctrine\Common\Collections\Collection|array" for association field "Alumno#$materias", got "Materia" instead. in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/ORMInvalidArgumentException.php:206
+Stack trace:
+#0 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(840): Doctrine\ORM\ORMInvalidArgumentException::invalidAssociation(Object(Doctrine\ORM\Mapping\ClassMetadata), Array, Object(Materia))
+#1 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(740): Doctrine\ORM\UnitOfWork->computeAssociationChanges(Array, Object(Doctrine\ORM\PersistentCollection))
+#2 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(802): Doctrine\ORM\UnitOfWork->computeChangeSet(Object(Doctrine\ORM\Mapping\ClassMetadata), Object(Alumno))
+#3 /home/ubuntu/workspace/tercerosejem in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/ORMInvalidArgumentException.php on line 206
+[14-Oct-2018 11:23:39 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'al2' for key 'UNIQ_1435D52D3A909126' in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php:105
+Stack trace:
+#0 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php(105): PDOStatement->execute(NULL)
+#1 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/dbal/lib/Doctrine/DBAL/Statement.php(168): Doctrine\DBAL\Driver\PDOStatement->execute(NULL)
+#2 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(281): Doctrine\DBAL\Statement->execute()
+#3 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(1014): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->executeInserts()
+#4 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWor in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 66
+[14-Oct-2018 11:23:55 UTC] PHP Fatal error:  Uncaught Doctrine\ORM\ORMInvalidArgumentException: Expected value of type "Doctrine\Common\Collections\Collection|array" for association field "Alumno#$materias", got "Materia" instead. in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/ORMInvalidArgumentException.php:206
+Stack trace:
+#0 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(840): Doctrine\ORM\ORMInvalidArgumentException::invalidAssociation(Object(Doctrine\ORM\Mapping\ClassMetadata), Array, Object(Materia))
+#1 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(740): Doctrine\ORM\UnitOfWork->computeAssociationChanges(Array, Object(Doctrine\ORM\PersistentCollection))
+#2 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(802): Doctrine\ORM\UnitOfWork->computeChangeSet(Object(Doctrine\ORM\Mapping\ClassMetadata), Object(Alumno))
+#3 /home/ubuntu/workspace/tercerosejem in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/ORMInvalidArgumentException.php on line 206
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:19 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:26:20 UTC] PHP Fatal error:  Uncaught Doctrine\ORM\ORMInvalidArgumentException: Expected value of type "Doctrine\Common\Collections\Collection|array" for association field "Alumno#$materias", got "Materia" instead. in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/ORMInvalidArgumentException.php:206
+Stack trace:
+#0 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(840): Doctrine\ORM\ORMInvalidArgumentException::invalidAssociation(Object(Doctrine\ORM\Mapping\ClassMetadata), Array, Object(Materia))
+#1 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(740): Doctrine\ORM\UnitOfWork->computeAssociationChanges(Array, Object(Doctrine\ORM\PersistentCollection))
+#2 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(802): Doctrine\ORM\UnitOfWork->computeChangeSet(Object(Doctrine\ORM\Mapping\ClassMetadata), Object(Alumno))
+#3 /home/ubuntu/workspace/tercerosejem in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/ORMInvalidArgumentException.php on line 206
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Warning:  var_export does not handle circular references in /home/ubuntu/workspace/tercerosejemplos/opcion2/src/Alumno.php on line 51
+[14-Oct-2018 11:28:10 UTC] PHP Fatal error:  Uncaught Doctrine\ORM\ORMInvalidArgumentException: Expected value of type "Doctrine\Common\Collections\Collection|array" for association field "Alumno#$materias", got "Materia" instead. in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/ORMInvalidArgumentException.php:206
+Stack trace:
+#0 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(840): Doctrine\ORM\ORMInvalidArgumentException::invalidAssociation(Object(Doctrine\ORM\Mapping\ClassMetadata), Array, Object(Materia))
+#1 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(740): Doctrine\ORM\UnitOfWork->computeAssociationChanges(Array, Object(Doctrine\ORM\PersistentCollection))
+#2 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(802): Doctrine\ORM\UnitOfWork->computeChangeSet(Object(Doctrine\ORM\Mapping\ClassMetadata), Object(Alumno))
+#3 /home/ubuntu/workspace/tercerosejem in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/ORMInvalidArgumentException.php on line 206
+[14-Oct-2018 14:11:57 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Alumno::addMateria() must be an instance of AlumnoMateria, instance of Materia given, called in /home/ubuntu/workspace/tercerosejemplos/opcion3/prueba.php on line 39 and defined in /home/ubuntu/workspace/tercerosejemplos/opcion3/src/Alumno.php:73
+Stack trace:
+#0 /home/ubuntu/workspace/tercerosejemplos/opcion3/prueba.php(39): Alumno->addMateria(Object(Materia))
+#1 {main}
+  thrown in /home/ubuntu/workspace/tercerosejemplos/opcion3/src/Alumno.php on line 73
+[14-Oct-2018 14:13:50 UTC] PHP Fatal error:  Uncaught Doctrine\ORM\ORMInvalidArgumentException: A new entity was found through the relationship 'Alumno#materias' that was not configured to cascade persist operations for entity: AlumnoMateria@0000000065d272e6000000002529a3c3. To solve this issue: Either explicitly call EntityManager#persist() on this unknown entity or configure cascade persist  this association in the mapping for example @ManyToOne(..,cascade={"persist"}). If you cannot find out which entity causes the problem implement 'AlumnoMateria#__toString()' to get a clue. in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/ORMInvalidArgumentException.php:92
+Stack trace:
+#0 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(852): Doctrine\ORM\ORMInvalidArgumentException::newEntityFoundThroughRelationship(Array, Object(AlumnoMateria))
+#1 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(740): Doctrine\ORM\UnitOfW in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/ORMInvalidArgumentException.php on line 92
+[14-Oct-2018 14:28:10 UTC] PHP Catchable fatal error:  Object of class Doctrine\ORM\PersistentCollection could not be converted to string in /home/ubuntu/workspace/tercerosejemplos/opcion3/prueba.php on line 50
+[14-Oct-2018 14:28:27 UTC] PHP Notice:  Undefined index: idalumno in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php on line 1768
+[14-Oct-2018 14:28:27 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php on line 1773
+[14-Oct-2018 14:28:27 UTC] PHP Warning:  require(/tmp/__CG__Materia.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Proxy/AbstractProxyFactory.php on line 209
+[14-Oct-2018 14:28:27 UTC] PHP Fatal error:  require(): Failed opening required '/tmp/__CG__Materia.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Proxy/AbstractProxyFactory.php on line 209
+[14-Oct-2018 14:30:33 UTC] PHP Notice:  Undefined index: idalumno in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php on line 1768
+[14-Oct-2018 14:30:33 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php on line 1773
+[14-Oct-2018 14:30:33 UTC] PHP Warning:  require(/tmp/__CG__Materia.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Proxy/AbstractProxyFactory.php on line 209
+[14-Oct-2018 14:30:33 UTC] PHP Fatal error:  require(): Failed opening required '/tmp/__CG__Materia.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Proxy/AbstractProxyFactory.php on line 209
+[14-Oct-2018 14:31:13 UTC] PHP Catchable fatal error:  Object of class Doctrine\ORM\PersistentCollection could not be converted to string in /home/ubuntu/workspace/tercerosejemplos/opcion3/prueba.php on line 50
+[14-Oct-2018 14:34:09 UTC] PHP Notice:  Undefined index: idalumno in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php on line 1768
+[14-Oct-2018 14:34:09 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php on line 1773
+[14-Oct-2018 14:34:09 UTC] PHP Warning:  require(/tmp/__CG__Materia.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Proxy/AbstractProxyFactory.php on line 209
+[14-Oct-2018 14:34:09 UTC] PHP Fatal error:  require(): Failed opening required '/tmp/__CG__Materia.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Proxy/AbstractProxyFactory.php on line 209
+[14-Oct-2018 14:34:54 UTC] PHP Notice:  Undefined index: idalumno in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php on line 1768
+[14-Oct-2018 14:34:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php on line 1773
+[14-Oct-2018 14:34:54 UTC] PHP Warning:  require(/tmp/__CG__Materia.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Proxy/AbstractProxyFactory.php on line 209
+[14-Oct-2018 14:34:54 UTC] PHP Fatal error:  require(): Failed opening required '/tmp/__CG__Materia.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Proxy/AbstractProxyFactory.php on line 209
+[14-Oct-2018 16:48:13 UTC] PHP Notice:  Undefined index: idalumno in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php on line 1768
+[14-Oct-2018 16:48:13 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php on line 1773
+[14-Oct-2018 16:48:13 UTC] PHP Warning:  require(/tmp/__CG__Materia.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Proxy/AbstractProxyFactory.php on line 209
+[14-Oct-2018 16:48:13 UTC] PHP Fatal error:  require(): Failed opening required '/tmp/__CG__Materia.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Proxy/AbstractProxyFactory.php on line 209
+[14-Oct-2018 16:49:54 UTC] PHP Warning:  require(/tmp/__CG__Materia.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Proxy/AbstractProxyFactory.php on line 209
+[14-Oct-2018 16:49:54 UTC] PHP Fatal error:  require(): Failed opening required '/tmp/__CG__Materia.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Proxy/AbstractProxyFactory.php on line 209
+[14-Oct-2018 16:53:01 UTC] PHP Warning:  require(/tmp/__CG__Materia.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Proxy/AbstractProxyFactory.php on line 209
+[14-Oct-2018 16:53:01 UTC] PHP Fatal error:  require(): Failed opening required '/tmp/__CG__Materia.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Proxy/AbstractProxyFactory.php on line 209
+[14-Oct-2018 16:54:00 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'al3' for key 'UNIQ_1435D52D3A909126' in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php:105
+Stack trace:
+#0 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php(105): PDOStatement->execute(NULL)
+#1 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/dbal/lib/Doctrine/DBAL/Statement.php(168): Doctrine\DBAL\Driver\PDOStatement->execute(NULL)
+#2 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(281): Doctrine\DBAL\Statement->execute()
+#3 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(1014): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->executeInserts()
+#4 /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWor in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 66
+[14-Oct-2018 16:54:17 UTC] PHP Warning:  require(/tmp/__CG__Materia.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Proxy/AbstractProxyFactory.php on line 209
+[14-Oct-2018 16:54:17 UTC] PHP Fatal error:  require(): Failed opening required '/tmp/__CG__Materia.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Proxy/AbstractProxyFactory.php on line 209
+[14-Oct-2018 16:55:15 UTC] PHP Warning:  require(/tmp/__CG__Materia.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Proxy/AbstractProxyFactory.php on line 209
+[14-Oct-2018 16:55:15 UTC] PHP Fatal error:  require(): Failed opening required '/tmp/__CG__Materia.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/tercerosejemplos/doctrine/vendor/doctrine/common/lib/Doctrine/Common/Proxy/AbstractProxyFactory.php on line 209
+[14-Oct-2018 16:59:05 UTC] PHP Catchable fatal error:  Object of class AlumnoMateria could not be converted to string in /home/ubuntu/workspace/tercerosejemplos/opcion3/prueba.php on line 53
+[14-Oct-2018 16:59:32 UTC] PHP Catchable fatal error:  Object of class DoctrineProxies\__CG__\Materia could not be converted to string in /home/ubuntu/workspace/tercerosejemplos/opcion3/prueba.php on line 53
+[14-Oct-2018 17:00:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method DoctrineProxies\__CG__\Materia::getNombre() in /home/ubuntu/workspace/tercerosejemplos/opcion3/prueba.php:53
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/tercerosejemplos/opcion3/prueba.php on line 53
+[17-Nov-2018 19:25:28 UTC] PHP Warning:  require_once(src/AlumnoMateria.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/ejemplos/doctrineejemplos/opcion4/prueba.php on line 5
+[17-Nov-2018 19:25:28 UTC] PHP Fatal error:  require_once(): Failed opening required 'src/AlumnoMateria.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/ejemplos/doctrineejemplos/opcion4/prueba.php on line 5
+[17-Nov-2018 19:32:27 UTC] PHP Notice:  Undefined variable: c in /home/ubuntu/workspace/ejemplos/doctrineejemplos/opcion3/prueba.php on line 59
+[17-Nov-2018 19:32:27 UTC] PHP Notice:  Undefined variable: c in /home/ubuntu/workspace/ejemplos/doctrineejemplos/opcion3/prueba.php on line 74
+[17-Nov-2018 19:32:27 UTC] PHP Notice:  Undefined variable: este in /home/ubuntu/workspace/ejemplos/doctrineejemplos/opcion3/prueba.php on line 68
+[17-Nov-2018 19:32:27 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to AlumnoMateria::setAlumno() must be an instance of Alumno, null given, called in /home/ubuntu/workspace/ejemplos/doctrineejemplos/opcion3/prueba.php on line 68 and defined in /home/ubuntu/workspace/ejemplos/doctrineejemplos/opcion3/src/AlumnoMateria.php:74
+Stack trace:
+#0 /home/ubuntu/workspace/ejemplos/doctrineejemplos/opcion3/prueba.php(68): AlumnoMateria->setAlumno(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/ejemplos/doctrineejemplos/opcion3/src/AlumnoMateria.php on line 74
+[17-Nov-2018 19:33:02 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to AlumnoMateria::setMateria() must be an instance of Materia, instance of AlumnoMateria given, called in /home/ubuntu/workspace/ejemplos/doctrineejemplos/opcion3/prueba.php on line 70 and defined in /home/ubuntu/workspace/ejemplos/doctrineejemplos/opcion3/src/AlumnoMateria.php:98
+Stack trace:
+#0 /home/ubuntu/workspace/ejemplos/doctrineejemplos/opcion3/prueba.php(70): AlumnoMateria->setMateria(Object(AlumnoMateria))
+#1 {main}
+  thrown in /home/ubuntu/workspace/ejemplos/doctrineejemplos/opcion3/src/AlumnoMateria.php on line 98
+[17-Nov-2018 19:33:44 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-3' for key 'am' in /home/ubuntu/workspace/ejemplos/doctrineejemplos/doctrine/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php:105
+Stack trace:
+#0 /home/ubuntu/workspace/ejemplos/doctrineejemplos/doctrine/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php(105): PDOStatement->execute(NULL)
+#1 /home/ubuntu/workspace/ejemplos/doctrineejemplos/doctrine/vendor/doctrine/dbal/lib/Doctrine/DBAL/Statement.php(168): Doctrine\DBAL\Driver\PDOStatement->execute(NULL)
+#2 /home/ubuntu/workspace/ejemplos/doctrineejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(281): Doctrine\DBAL\Statement->execute()
+#3 /home/ubuntu/workspace/ejemplos/doctrineejemplos/doctrine/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(1014): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->executeInserts()
+#4 /home/ubuntu/workspace/ejemplos/doctrineejemplos/doctrine/vendor/doct in /home/ubuntu/workspace/ejemplos/doctrineejemplos/doctrine/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 66

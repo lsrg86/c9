@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @Entity @Table(name="alumnomateria",
+ *  uniqueConstraints={@UniqueConstraint(name="am", columns={"idalumno", "idmateria"})})
+ **/
+class AlumnoMateria {
+
+    /**
+     * @Id
+     * @Column(type="integer") @GeneratedValue
+     */
+    private $id;
+
+    /**
+     * @ManyToOne(targetEntity="Alumno", inversedBy="materias")
+     * @JoinColumn(name="idalumno", referencedColumnName="id", nullable=false)
+     */
+    private $alumno;
+
+    /**
+     * @ManyToOne(targetEntity="Materia", inversedBy="alumnos")
+     * @JoinColumn(name="idmateria", referencedColumnName="id", nullable=false)
+     */
+    private $materia;
+
+    /**
+     * @Column(type="string", length=20, unique=false, nullable=true)
+     */
+    private $nota;
+
+}

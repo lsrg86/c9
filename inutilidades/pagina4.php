@@ -9,8 +9,3 @@ if(!empty($_GET['esteesta'])) {
     echo 'esteesta no está<br>';
 }
 
-if(!empty($_GET['estenoesta'])) {
-    echo 'estenoesta está<br>';
-} else {
-    echo 'estenoesta no está<br>';
-}

@@ -26,3 +26,172 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php on line 12
+[08-Nov-2018 08:28:05 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\Database' not found in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php on line 12
+[02-Dec-2018 11:17:53 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\Database' not found in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php on line 12
+[02-Dec-2018 11:18:10 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\Database' not found in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php on line 12
+[02-Dec-2018 11:18:15 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\Database' not found in /home/ubuntu/workspace/inutilidades/proyecto/producto/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/producto/index.php on line 12
+[02-Dec-2018 11:18:45 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\Database' not found in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php on line 12
+[02-Dec-2018 11:43:31 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\Database' not found in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php on line 12
+[02-Dec-2018 12:05:15 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\Database' not found in /home/ubuntu/workspace/proyecto/usuario/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/proyecto/usuario/index.php on line 12
+[02-Dec-2018 12:13:25 UTC] PHP Fatal error:  Uncaught Error: Class 'classes\izv\database\Database' not found in /home/ubuntu/workspace/proyecto/usuario/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/proyecto/usuario/index.php on line 12
+[02-Dec-2018 12:19:29 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\Database' not found in /home/ubuntu/workspace/proyecto/producto/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/proyecto/producto/index.php on line 12
+[02-Dec-2018 12:37:36 UTC] PHP Fatal error:  Uncaught Error: Class 'classes\izv\database\Database' not found in /home/ubuntu/workspace/proyecto/usuario/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/proyecto/usuario/index.php on line 12
+[02-Dec-2018 12:44:37 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\Database' not found in /home/ubuntu/workspace/proyecto/usuario/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/proyecto/usuario/index.php on line 12
+[02-Dec-2018 20:02:53 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\Database' not found in /home/ubuntu/workspace/inutilidades/proyecto/producto/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/producto/index.php on line 12
+[02-Dec-2018 20:02:58 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\Database' not found in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php on line 12
+[05-Dec-2018 17:07:23 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\Database' not found in /home/ubuntu/workspace/inutilidades/proyecto/producto/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/producto/index.php on line 12
+[05-Dec-2018 17:07:42 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\Database' not found in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php on line 12
+[05-Dec-2018 17:08:01 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\Database' not found in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php on line 12
+[05-Dec-2018 17:08:49 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\Database' not found in /home/ubuntu/workspace/inutilidades/proyecto/producto/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/producto/index.php on line 12
+[05-Dec-2018 17:08:53 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\Database' not found in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php on line 12
+[05-Dec-2018 18:29:27 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\Database' not found in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php on line 12
+[05-Dec-2018 18:29:36 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\Database' not found in /home/ubuntu/workspace/inutilidades/proyecto/producto/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/producto/index.php on line 12
+[05-Dec-2018 18:29:54 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\Database' not found in /home/ubuntu/workspace/inutilidades/proyecto/producto/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/producto/index.php on line 12
+[08-Dec-2018 19:32:33 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\Database' not found in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php on line 12
+[08-Dec-2018 19:38:40 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\Database' not found in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php on line 12
+[08-Dec-2018 19:38:41 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\Database' not found in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php on line 12
+[08-Dec-2018 19:42:29 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\managedata\ManageUsuario' not found in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php on line 13
+[08-Dec-2018 19:42:30 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\managedata\ManageUsuario' not found in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php on line 13
+[08-Dec-2018 19:45:13 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\managedata\ManageUsuario' not found in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php on line 13
+[08-Dec-2018 19:46:09 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\managedata\ManageUsuario' not found in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php on line 13
+[08-Dec-2018 19:48:05 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\Database' not found in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php on line 12
+[08-Dec-2018 19:48:17 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\database\Database' not found in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php on line 12
+[08-Dec-2018 19:51:00 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\tools\Reader' not found in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php on line 17
+[08-Dec-2018 19:51:03 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\tools\Reader' not found in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php on line 17
+[08-Dec-2018 19:52:31 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\tools\Reader' not found in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/usuario/index.php on line 17
+[08-Dec-2018 19:57:06 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\managedata\ManageProducto' not found in /home/ubuntu/workspace/inutilidades/proyecto/producto/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/producto/index.php on line 13
+[08-Dec-2018 20:19:48 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\managedata\ManageProducto' not found in /home/ubuntu/workspace/inutilidades/proyecto/producto/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/producto/index.php on line 13
+[08-Dec-2018 21:01:56 UTC] PHP Fatal error:  Trait 'izv\common\Common' not found in /home/ubuntu/workspace/inutilidades/proyecto/classes/izv/data/Usuario.php on line 7
+[08-Dec-2018 21:04:49 UTC] PHP Fatal error:  Trait 'izv\common\Comun' not found in /home/ubuntu/workspace/inutilidades/proyecto/classes/izv/data/Usuario.php on line 7
+[09-Dec-2018 08:47:27 UTC] PHP Fatal error:  Trait 'izv\common\Common' not found in /home/ubuntu/workspace/inutilidades/proyecto/classes/izv/data/Usuario.php on line 7
+[09-Dec-2018 08:49:58 UTC] PHP Fatal error:  Trait 'izv\common\Common' not found in /home/ubuntu/workspace/inutilidades/proyecto/classes/izv/data/Usuario.php on line 7
+[09-Dec-2018 08:58:23 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/ubuntu/workspace/inutilidades/proyecto/classes/izv/database/Database.php on line 72
+[09-Dec-2018 08:58:23 UTC] PHP Notice:  Undefined variable: resultado2 in /home/ubuntu/workspace/inutilidades/proyecto/cliente/doinsert.php on line 32
+[09-Dec-2018 10:59:13 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/ubuntu/workspace/inutilidades/proyecto/classes/izv/database/Database.php on line 72
+[26-Dec-2018 17:33:53 UTC] PHP Notice:  Undefined variable: resultado2 in /home/ubuntu/workspace/inutilidades/proyecto/cliente/doinsert.php on line 32
+[26-Dec-2018 17:45:47 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/ubuntu/workspace/inutilidades/proyecto/cliente/doinsert.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/cliente/doinsert.php on line 26
+[26-Dec-2018 17:46:33 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/ubuntu/workspace/inutilidades/proyecto/cliente/doinsert.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/cliente/doinsert.php on line 28
+[26-Dec-2018 17:46:39 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/ubuntu/workspace/inutilidades/proyecto/cliente/doinsert.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/proyecto/cliente/doinsert.php on line 28
+[26-Dec-2018 17:47:05 UTC] PHP Notice:  Undefined variable: resultado in /home/ubuntu/workspace/inutilidades/proyecto/cliente/doinsert.php on line 38
+[26-Dec-2018 17:47:05 UTC] PHP Notice:  Undefined variable: resultado in /home/ubuntu/workspace/inutilidades/proyecto/cliente/doinsert.php on line 42
+[26-Dec-2018 17:47:05 UTC] PHP Notice:  Undefined variable: resultado2 in /home/ubuntu/workspace/inutilidades/proyecto/cliente/doinsert.php on line 42
+[20-Jan-2019 11:04:29 UTC] PHP Notice:  Undefined variable: resultado in /home/ubuntu/workspace/inutilidades/proyecto/cliente/doinsert.php on line 38
+[20-Jan-2019 11:04:29 UTC] PHP Notice:  Undefined variable: resultado in /home/ubuntu/workspace/inutilidades/proyecto/cliente/doinsert.php on line 42
+[20-Jan-2019 11:04:29 UTC] PHP Notice:  Undefined variable: resultado2 in /home/ubuntu/workspace/inutilidades/proyecto/cliente/doinsert.php on line 42
+[20-Jan-2019 16:36:49 UTC] PHP Notice:  Undefined variable: administrador in /home/ubuntu/workspace/inutilidades/proyecto/classes/izv/data/Usuario.php on line 83
+[20-Jan-2019 16:50:24 UTC] PHP Notice:  Undefined variable: administrador in /home/ubuntu/workspace/inutilidades/proyecto/classes/izv/data/Usuario.php on line 83
+[20-Jan-2019 16:53:14 UTC] PHP Notice:  Undefined variable: administrador in /home/ubuntu/workspace/inutilidades/proyecto/classes/izv/data/Usuario.php on line 83

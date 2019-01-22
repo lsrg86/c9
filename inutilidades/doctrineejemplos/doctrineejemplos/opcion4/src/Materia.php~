@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @Entity @Table(name="materia")
+ **/
+class Materia {
+
+    /**
+     * @Id
+     * @Column(type="integer") @GeneratedValue
+     */
+    private $id;
+
+    /**
+     * @Column(type="string", length=40, unique=true, nullable=false)
+     */
+    private $materia;
+
+    /**
+     * @ManyToMany(targetEntity="Alumno", mappedBy="materias")
+     * @JoinTable(name="alumnomateria",
+     *      joinColumns={@JoinColumn(name="idmateria", referencedColumnName="id")},
+     *      inverseJoinColumns={@JoinColumn(name="idalumno", referencedColumnName="id")}
+     *      )
+     */
+    private $alumnos = null;
+
+}

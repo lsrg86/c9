@@ -1,0 +1,83 @@
+persona(id, nombre)                } una
+                                   } a
+telefono(id, idpersona, telefono)  } muchos
+
+/* extremo uno */
+/**
+ * @Entity 
+ * @Table(name="persona")
+ */
+class Persona {
+    /**
+     * @Id
+     * @Column(type="integer") @GeneratedValue
+     */
+	 protected $id;
+	 /**
+     * @Column(type="string", length=200, unique=true, nullable=false)
+     */
+    protected $nombre;
+    /******************************************************************/
+    /* IMPORTANTE */
+    /**
+     * @OneToMany(targetEntity="Telefono", mappedBy="persona")
+     */
+    protected $telefonos = null;
+    /******************************************************************/
+    public function __construct() {
+        /******************************************************************/
+        $this->telefonos = new ArrayCollection();
+        /******************************************************************/
+    }
+	...
+	/******************************************************************/
+	public function addTelefono($telefono){
+        $this->telefonos[] = $telefono;
+    }
+    /******************************************************************/
+    public function getTelefonos(){
+        return $this->telefonos;
+    }
+}
+/* extremo muchos */
+/**
+ * @Entity 
+ * @Table(name="telefono",
+ * uniqueConstraints={@UniqueConstraint(name="tp_unique",columns={"idpersona","telefono"})})
+ */
+class Telefono {
+    /**
+     * @Id
+     * @Column(type="integer") @GeneratedValue
+     */
+    protected $id;
+    /******************************************************************/
+    /* IMPORTANTE */
+    /**
+     * @ManyToOne(targetEntity="Persona", inversedBy="telefonos")
+     * @JoinColumn(name="idpersona", referencedColumnName="id")
+     */
+    protected $persona;
+    /******************************************************************/
+    /**
+     * @Column(type="string", length=20, unique=false, nullable=false)
+     */
+    protected $telefono;
+	...
+	public function setPersona($persona) {
+	    /******************************************************************/
+        $persona->addTelefono($this);
+        /******************************************************************/
+        $this->persona = $persona;
+    }
+}
+/* ejecucion */
+Siempre debemos situarnos en la carpeta en la que estén los archivos bootstrap.php y cli-config.php.
+Dentro de esta carpeta tendremos una carpeta 'src' en la que definimos las clases.
+Desde esta carpeta ejecutaremos doctrine, para lo cual tendremos que introducir la ruta hasta llegar a él.
+
+crear el esquema:
+../ruta/a/doctrine orm:schema-tool:create
+
+modificar el esquema:
+../ruta/a/doctrine orm:schema-tool:update --force

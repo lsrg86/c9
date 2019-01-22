@@ -17,11 +17,12 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="producto/">Producto</a>
-                    </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="usuario/">Usuario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cliente/">Registro</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#">Disabled</a>
