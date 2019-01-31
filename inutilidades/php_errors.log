@@ -182,3 +182,17 @@ Stack trace:
 #1 /home/ubuntu/workspace/inutilidades/tercerosejemplos/c9.php(24): izv\mvc\FrontController->doAction()
 #2 {main}
   thrown in /home/ubuntu/workspace/inutilidades/tercerosejemplos/classes/izv/controller/UserController.php on line 28
+[31-Jan-2019 07:25:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method izv\database\Database::createQuery() in /home/ubuntu/workspace/inutilidades/ajax/classes/izv/model/AppModel.php:55
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/ajax/classes/izv/controller/AjaxController.php(35): izv\model\AppModel->getDoctrineCiudades('1', 'name')
+#1 /home/ubuntu/workspace/inutilidades/ajax/classes/izv/mvc/FrontController.php(28): izv\controller\AjaxController->listaciudades()
+#2 /home/ubuntu/workspace/inutilidades/ajax/c9.php(21): izv\mvc\FrontController->doAction()
+#3 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/ajax/classes/izv/model/AppModel.php on line 55
+[31-Jan-2019 07:25:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method izv\database\Database::createQuery() in /home/ubuntu/workspace/inutilidades/ajax/classes/izv/model/AppModel.php:55
+Stack trace:
+#0 /home/ubuntu/workspace/inutilidades/ajax/classes/izv/controller/AjaxController.php(35): izv\model\AppModel->getDoctrineCiudades('1', 'name')
+#1 /home/ubuntu/workspace/inutilidades/ajax/classes/izv/mvc/FrontController.php(28): izv\controller\AjaxController->listaciudades()
+#2 /home/ubuntu/workspace/inutilidades/ajax/c9.php(21): izv\mvc\FrontController->doAction()
+#3 {main}
+  thrown in /home/ubuntu/workspace/inutilidades/ajax/classes/izv/model/AppModel.php on line 55
