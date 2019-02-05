@@ -11,15 +11,46 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="cliente/dologin.php" method="post" id="fLogin">
-                    <input class="form-control" type="email" name="correo" id="correo" required placeholder="Correo electrónico"/>
+                <form id="fLogin">
+                    <input class="form-control" type="email" id="correologin" required placeholder="Correo electrónico"/>
                     <br>
-                    <input class="form-control" type="password" name="clave" id="clave" required placeholder="Clave de acceso"/>
+                    <input class="form-control" type="password" id="clavelogin" required placeholder="Clave de acceso"/>
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                <button type="submit" form="fLogin" class="btn btn-primary" id="btLogin">Login</button>
+                <button type="button" form="fLogin" class="btn btn-primary" id="btLogin">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modalregister" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Register</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="fRegister">
+                    <input class="form-control" type="text" id="alias" placeholder="Nombre de usuario"/>
+                    <br>
+                    <input class="form-control" type="text" id="nombre" required placeholder="Nombre"/>
+                    <br>
+                    <input class="form-control" type="text" id="apellidos" required placeholder="Apellidos"/>
+                    <br>
+                    <input class="form-control" type="email" id="correo" required placeholder="Correo electrónico"/>
+                    <br>
+                    <input class="form-control" type="password" id="clave" required placeholder="Clave de acceso"/>
+                    <br>
+                    <input class="form-control" type="password" id="repiteclave" required placeholder="Repite clave de acceso"/>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" form="fRegister" class="btn btn-primary" id="btRegister">Registrar</button>
             </div>
         </div>
     </div>
@@ -27,13 +58,12 @@
 <!-- fin modal -->
 <div class="col-lg-12">
     <div>
-        <!--<div class="text-center">
-            <a id="btRegistro" href="#" class="btn contact-submit" role="button">Registro</a>
+        <div class="text-center">
+            <a id="btRegistro" href="#" data-toggle="modal" data-target="#modalregister" class="btn contact-submit" role="button">Registro</a>
         </div>
         <div class="text-center">
             <a id="btSesion" href="#" data-toggle="modal" data-target="#modallogin" class="btn contact-submit" role="button">Iniciar sesión</a>
-            <a data-toggle="modal" data-target="#modallogin" class="btn btn-primary btn-lg" href="#" role="button">Login &raquo;</a>
-        </div>-->
+        </div>
     </div>
     <div class="col-lg-12" id="verListaDeValores">
         <table class="table">

@@ -16,6 +16,26 @@ class AjaxController extends Controller {
         //...
     }
     
+    function comprobaralias() {
+        sleep(3);
+        $alias = Reader::read('alias');
+        $available = 0;
+        if($alias !== null && $alias !== '') {
+            $available = $this->getModel()->aliasAvailable($alias);
+        }
+        $this->getModel()->set('aliasdisponible', $available);
+    }
+    
+    function comprobarcorreo() {
+        sleep(3);
+        $correo = Reader::read('correo');
+        $available = 0;
+        if(filter_var($correo, FILTER_VALIDATE_EMAIL)) {
+            $available = $this->getModel()->correoAvailable($correo);
+        }
+        $this->getModel()->set('correodisponible', $available);
+    }
+
     function listaciudades() {
         $ordenes = [
             'id' => '',
@@ -46,4 +66,7 @@ class AjaxController extends Controller {
     function main() {
     }
 
+    function nada() {
+        sleep(3);
+    }
 }
