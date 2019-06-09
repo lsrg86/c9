@@ -1,0 +1,23 @@
+[14-May-2019 20:18:37 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\data\DateTime' not found in /home/ubuntu/workspace/peluqueria/classes/izv/data/Cliente.php:45
+Stack trace:
+#0 /home/ubuntu/workspace/peluqueria/pruebas/pruebas.php(9): izv\data\Cliente->__construct()
+#1 {main}
+  thrown in /home/ubuntu/workspace/peluqueria/classes/izv/data/Cliente.php on line 45
+[14-May-2019 20:52:50 UTC] PHP Fatal error:  Uncaught Error: Class 'izv\data\DateTime' not found in /home/ubuntu/workspace/peluqueria/classes/izv/data/Pedido.php:29
+Stack trace:
+#0 /home/ubuntu/workspace/peluqueria/pruebas/pruebas.php(31): izv\data\Pedido->__construct()
+#1 {main}
+  thrown in /home/ubuntu/workspace/peluqueria/classes/izv/data/Pedido.php on line 29
+[14-May-2019 21:06:54 UTC] PHP Notice:  Undefined variable: detalle in /home/ubuntu/workspace/peluqueria/pruebas/pruebas.php on line 43
+[14-May-2019 21:06:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function setCantidad() on null in /home/ubuntu/workspace/peluqueria/pruebas/pruebas.php:43
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/peluqueria/pruebas/pruebas.php on line 43
+[14-May-2019 21:10:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method izv\data\Detalle::setCliente() in /home/ubuntu/workspace/peluqueria/pruebas/pruebas.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/peluqueria/pruebas/pruebas.php on line 48
+[07-Jun-2019 08:58:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getDetalles() on array in /home/ubuntu/workspace/peluqueria/pruebas/consultajoin.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ubuntu/workspace/peluqueria/pruebas/consultajoin.php on line 18

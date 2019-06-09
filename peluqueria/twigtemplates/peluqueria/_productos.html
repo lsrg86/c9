@@ -1,0 +1,108 @@
+{% extends '_base.html' %}
+{% block about %}
+    
+        <main role="main">
+            <div class="jumbotron">
+                <div class="container">
+                    <h4 class="display-4">producto</h4>
+                    
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <h3>Hola {%if admin%}Administrador{%endif%}{{datos.nombre}}</h3>
+                    
+                </div>
+                <table class="table table-striped table-hover" id="tablaproducto">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Tipo</th>
+                            <th>Volumen minimo</th>
+                            <th>Volumen máximo</th>
+                            <th>Descripcion</th>
+                            <th>Editar</th>
+                            {%if admin%}
+                            <th>Borrar</th>
+                            {%endif%}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% if admin %}
+                                
+										{% for producto in datos  %}
+											<tr>
+												<td>{{producto.nombre}}</td>
+												<td>{{producto.precio}}</td>
+												<td>{{producto.tipo}}</td>
+												<td>{{producto.volumendesde}}</td>
+												<td>{{producto.volumenhasta}}</td>
+												<td>{{producto.descripcion}}</td>
+												<!--<td><span class="label label-success">{{producto.activo ? '&#9745;' : '&#9744;'}}</span></td>-->
+												<!--{#<td><span class="label label-success">{{producto.tipo ? '&#11088;' : '&#12336;'}}</span></td>#}-->
+												<!--<td><span class="label ">{{producto.permisos ? '&#11088;' : '&#12336;'}}</span></td>-->
+												<input type="hidden" class="form-control" name="id" id="id-edit"  value="{{producto.id}}" >
+												
+												<td scope="col"><form method="POST" action="producto/editar" >
+                                                <input type="hidden" class="form-control" name="id" id="id-edit"  value="{{producto.id}}" >
+                                                 <button type="submit" class="editar">  &#9998;</button>
+                                                </form></td>
+												<td scope="col"><form method="POST" action="producto/doBorrar" >
+                                                <input type="hidden" class="form-control" name="id" id="id-edit"  value="{{producto.id}}" >
+                                                 <button type="submit" class="borrar"> &#10060;</button>
+                                                </form></td>
+										 	
+									 	</tr>
+									 	
+									 	{% endfor %}
+									 	</tbody>
+                                    </table>
+									 	<div class='row'>
+                                        <div class='col-md-3'>
+                                            <a href="producto/paginador?pagina={{paginas.primero}}" class="btn contact-submit" role="button">Primero</a>
+                                        </div>
+                                        <div class='col-md-3'>
+                                            <a href="producto/paginador?pagina={{paginas.anterior}}" class="btn contact-submit" role="button">Anterior</a>
+                                        </div>
+                                        <div class='col-md-3'>
+                                            <a href="producto/paginador?pagina={{paginas.siguiente}}" class="btn contact-submit" role="button">Siguiente</a>
+                                        </div>
+                                        <div class='col-md-3'>
+                                            <a href="producto/paginador?pagina={{paginas.ultimo}}" class="btn contact-submit" role="button">Último</a>
+                                        </div>
+                                    </div>
+									 	{% else %} 
+                        <tr>
+                        
+                            <td>{{datos.correo}}</td> 
+                            <td>{{datos.alias}}</td>
+                            <td>{{datos.nombre}}</td>
+                            <td>{{datos.apellidos}}</td>
+                            <td>{{datos.fechaalta|date("d/m/Y")}}</td>
+                            <td>{{datos.activo == 1 ? '&#9745;' : '&#9744;'}}</td>
+                            <td scope="col"><form method="POST" action="producto/editar" >
+                            <input type="hidden" class="form-control" name="id" id="id-edit"  value="{{datos.id}}" >
+                            <button type="submit" class="editar">  &#9998;</button>
+                            </form></td>
+							
+							
+						</tr>
+						</tbody>
+                </table>
+						{% endif %}
+                        
+                        
+                        
+                    
+                 
+            <!--    <div class="row">-->
+            <!--        <input class="btn btn-danger" type="button" value="borrar" data-toggle="modal" data-target="#confirm" />-->
+            <!--        &nbsp;-->
+            <!--        <a href="insert.php" class="btn btn-success">agregar producto</a>-->
+            <!--    </div>-->
+            <!--    <form action="dodelete.php" method="post" name="fBorrar" id="fBorrar"></form>-->
+            <!--    <hr>-->
+            <!--</div>-->
+        </main>
+{% endblock %}

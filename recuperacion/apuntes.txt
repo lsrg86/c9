@@ -1,0 +1,48 @@
+$archivo = new SubirArchivos('nombreParametro');
+$archivo->setDestino(...);
+$archivo->setNombre(...);
+$archivo->setAccion(...);
+$archivo->setMaximo(...);
+$archivo->setMinimo(...);
+$archivo->setTipoPermitido(...);
+$archivo->setTipoProhibido(...);
+if($archivo->sube()) {
+	echo 'todo bien';
+	echo $archivo->getNombreSubido();
+	$archivo->setDestino(...);
+	$archivo->sube()
+} else {
+	echo 'mal';
+}
+SubirArchivos::setDestino(...);
+SubirArchivos::setAccion(...);
+SubirArchivos::setNombre(...);
+SubirArchivos::sube('archivo1');
+SubirArchivos::setNombre(...);
+SubirArchivos::sube('archivo2');
+
+
+
+*Doctrine:
+
+-relaciones entre objetos
+-Ejemplo: 
+
+3 tablas:
+
+aula    		recurso		aularecurso
+id				id			id
+numero			nombre		idaula
+				tipo		idrecurso
+							puesto
+						
+one to			one to		many to one
+many			many
+target:			target:
+aularecurso 	aularecurso
+mappingby:  	mappingby:
+aula			recurso
+
+
+
+ponerle nombre a las foreign para que no las nombre como quiera el doctrine(mirar apuntes);

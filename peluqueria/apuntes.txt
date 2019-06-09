@@ -1,0 +1,39 @@
+Paginación:
+
+    Archivos que se tocan:
+
+    -usermodel:
+    -usercontroler:
+    
+    
+    
+    usar ceil(registros/reg por pagina);
+    
+    en model:
+     
+    function getAulasPaginadas($pagina = 1, $rpp = 3) {
+        $gestor = $this->getManager();
+        $dql = 'select a from izv\data\Aula a';
+        $query = $gestor->createQuery($dql);
+        $paginator = new Paginator($query); //dql
+        $total = $paginator->count();
+        $pagination = new izv\tools\Pagination($total, $pagina, $rpp); //mio
+        $paginator->getQuery()
+            ->setFirstResult($pagination->offset())
+            ->setMaxResults($pagination->rpp());
+        return $paginator;
+    }
+    
+    
+    en controler
+    
+    
+    function main() {
+        $aulas = $this->getModel()->getAulasPaginadas();
+        $this->getModel()->set('aulas', $aulas);
+    }
+    
+    
+    en plantilla:
+    
+    

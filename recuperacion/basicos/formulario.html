@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="procesarformulario.php" enctype="application/x-www-form-urlencoded" method="post" id="formmatricula">
+    <!--Con require obligamos a que los campos estén "marcados"-->
+        <input required type="text" name="nombre" placeholder="nombre" /><br>
+        <input required type="text" name="apellido" placeholder="apellidos" /><br>
+        <input required type="text" name="dni" placeholder="dni" /><br>
+        <input required type="date" name="fecha" /><br>
+        <textarea name="direccion" placeholder="introduce tu dirección"></textarea><br> sexo:
+        <br>
+        <label for="femenino">femenino</label> <input type="radio" id="femenino" name="sexo" value="femenino" /><br>
+        <label for="masculino">masuclino</label> <input type="radio" id="masculino" name="sexo" value="masculino" /><br>
+
+        <!--Materias-->
+        <!--Debe seleccionarse aslmenos una, aquí n se pueden utilizar los requires, por lo que debemos hacerlo con js-->
+        <!--<label for="dwes">dwes</label> <input type="radio" id="dwes" name="dwes[]" value="dwes" /><br>-->
+        <!--Agregamos [] para poder enviar varios datos con el mismo nombre (aunque distintos valores) en forma de array. -->
+        <!--<label for="dwec">dwec</label> <input type="radio" id="dwec" name="dwec[]" value="dwec" /><br>-->
+
+        <input required type="text" name="asignatura" placeholder="Introduce tu asignatura" /><br>
+        <input type="submit" value="Submit" />
+        </form>
+    <!--<form action="procesarformulario.php" enctype="application/x-www-form-urlencoded" method="post" id="formmatricula">-->
+    <!--    <input required type="text" name="nombre" placeholder="introduce nombre"/><br>-->
+    <!--    <input required type="text" name="apellido" placeholder="introduce apellido"/><br>-->
+    <!--    <input required type="text" name="dni" placeholder="introduce dni"/><br>-->
+    <!--    <textarea required name="direccion" placeholder="introduce direccion"></textarea><br>-->
+    <!--    <input required type="date" name="fecha" /><br>-->
+    <!--    sexo:<br>-->
+    <!--    <label for="femenino">femenino</label>-->
+        
+    <!--    <input required type="radio" id="femenino" name="sexo" value="femenino"/><br>-->
+    <!--    <label for="masculino">masculino</label>-->
+    <!--    <input required type="radio" id="masculino" name="sexo" value="masculino"/><br>-->
+    <!--    materias:<br>-->
+    <!--    <input required type="text" name="asignatura" placeholder="introduce asignatura"/><br>-->
+        <!--<label for="dwes">dwes</label>-->
+        <!--<input required type="checkbox" id="dwes" name="materias[]" value="dwes"/>-->
+        <!--<label for="dwec">dwec</label>-->
+        <!--<input required type="checkbox" id="dwec" name="materias[]" value="dwec"/><br>-->
+        <!--terminar de validar con js-->
+    <!--    <input type="submit" value="Submit"/>-->
+    <!--</form>-->
+</body>
+</html>

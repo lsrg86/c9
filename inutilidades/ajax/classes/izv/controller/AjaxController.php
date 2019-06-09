@@ -65,7 +65,21 @@ class AjaxController extends Controller {
     
     function main() {
     }
-
+    
+    //
+    function upload() {
+        $result = false;
+        if($this->getSession()->isLogged()) {
+            //funciona, pero hay algún detalle pendiente, para vosotros
+            $upload = new Upload('image');
+            $upload->setTarget('upload/');
+            $upload->setPolicy(Upload::POLICY_KEEP);
+            $upload->setName($this->getSession()->getLogin()->getId());
+            $result = $upload->upload();
+        }
+        $this->getModel()->set('upload', $result);
+        $this->getModel()->set('file', $upload->getRoute());
+    }
     function nada() {
         sleep(3);
     }
